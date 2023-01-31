@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge-112</title>
+    <style>
+        .container{
+            width: 600px;
+            height: 400px;
+            margin: 100px auto;
+            /* border-radius: 50px;
+            overflow: hidden; */
+            border: 1px solid rgb(188, 187, 187);
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: #EEEEEE;
+            list-style: none;
+            margin: 0;
+            padding: 10px;
+            cursor: pointer;
+        }
+        ul li{
+            width: 70px;
+            height: 70px;
+            opacity: .2;
+            border-radius: 50%;
+        }
+        ul li:nth-child(1){
+            background-color: red;
+        }
+        ul li:nth-child(2){
+            background-color: green;
+        }
+        ul li:nth-child(3){
+            background-color: blue;
+        }
+        ul li:nth-child(4){
+            background-color: black;
+        }
+        .active{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <ul>
+            <li data_color="red" class="active"></li>
+            <li data_color="green"></li>
+            <li data_color="blue"></li>
+            <li data_color="black"></li>
+        </ul>
+    </div>
+    
+    <script src="challenge.js"></script>
+</body>
+</html>
